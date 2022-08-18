@@ -42,4 +42,5 @@ def audio(string, href):
     return ehref("audio", string, href)
 def img(string, href):
     return ehref("img", string, href)
-n(img("Hello", ))
+def video(string, href)
+    return ehref("video", string, href)
