@@ -44,3 +44,5 @@ def img(string, href):
     return ehref("img", string, href)
 def video(string, href):
     return ehref("video", string, href)
+def a(href, string):
+    return ehref("a", string, href)
