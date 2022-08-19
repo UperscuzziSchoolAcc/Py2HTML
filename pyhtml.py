@@ -53,6 +53,3 @@ def video(string, href, style=None):
     return ehref("video", string, href)
 def a(href, string, style=None):
     return ehref("a", string, href)
-for i in range(15):
-    n(p(i, ["font-size: " + str(i + 15) + "px", "font-family: Impact"]))
-    n(hr())
