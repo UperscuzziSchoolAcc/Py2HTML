@@ -1,16 +1,19 @@
 def listToString(list):
-    toret = ""
-    for i in range(len(list)):
-        toret = toret + str(list[i])
-        if not i == len(list) - 1:
-            toret = toret + "; "
-    return toret
+    if not list == None:
+        toret = ""
+        for i in range(len(list)):
+            toret = toret + str(list[i])
+            if not i == len(list) - 1:
+                toret = toret + "; "
+        return toret
+    else:
+        return ""
 def n(string):
     print(string)
 def e(l, string, style=""):
     return "<" + str(l) + " style=" + '"' + listToString(style) + '"' + ">" + str(string) + "<" + "/" + str(l) + ">"
-def ehref(l, string, href):
-    return "<" + str(l) + ' href="' + str(href) + '">' + str(string) + "<" + "/" + str(l) + ">"
+def ehref(l, string, href="", style=""):
+    return "<" + str(l) + " style=" + '"' + listToString(style) + '"' + " href=" + '"' + href + '"' + ">" + str(string) + "<" + "/" + str(l) + ">" 
 def p(string, style=None):
     return e("p", string, style)
 def h1(string, style=None):
@@ -53,3 +56,7 @@ def video(string, href, style=None):
     return ehref("video", string, href)
 def a(href, string, style=None):
     return ehref("a", string, href)
+def button(href, string, style=None,):
+    return ehref("button", string, href)
+def center(string):
+    return "<center>" + string + "</center>"
