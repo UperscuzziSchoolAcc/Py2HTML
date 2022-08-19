@@ -35,6 +35,13 @@ f(p("Hello, Welcome to Py2HTML " + b("NOW BOW TO THE GITHUB GODS!!")))
 img(string, href)
 audio(string, href)
 ```
-------------
 
-###### I include alot of elements, I will add more as well as expand on the current ones, but most of them currently have one arguement (the string to put in the element)
+####  Styling
+###### In HTML with most elements you can add a "style=" argument to it
+```html
+<p style="font-size = 50px; font-family: Impact">haha big text go brrrr</p>
+```
+###### I added an optional arguement for style, to make the above HTML you would put the styles in a list:
+```python
+n(p("haha big text go brrrr", ["font-size: 50px" ,  "font-family: Impact"]))
+```
