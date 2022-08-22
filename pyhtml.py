@@ -10,6 +10,9 @@ def listToString(list):
         return ""
 def n(string):
     print(string)
+def f(string):
+    f = open("index.html", "a")
+    f.write(string + "\n")
 def e(l, string, style=""):
     return "<" + str(l) + " style=" + '"' + listToString(style) + '"' + ">" + str(string) + "<" + "/" + str(l) + ">"
 def ehref(l, string, href="", style=""):
@@ -58,5 +61,3 @@ def a(href, string, style=None):
     return ehref("a", string, href)
 def button(href, string, style=None,):
     return ehref("button", string, href)
-def center(string):
-    return "<center>" + string + "</center>"
